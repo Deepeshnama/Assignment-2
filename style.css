@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/Deland-35.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.navbar ul{
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+section{
+    width: 15%;
+    height: auto;
+    display: flex;
+}
+
+button{
+    width: 50%;
+    height: 30px;
+    margin: 10px;
+}
+
+#sign-in{
+    background-color: rgb(234, 87, 87);
+    color: white;
+    border: none;
+}
+
+.find-home{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.find-home ul{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.find-home ul button{
+    width: 180px;
+    height: 30px;
+    padding-right: 100px;
+}
+
+.find-home ul li p{
+    padding-left: 15px;
+}
+
+#search{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(228, 23, 23);
+    color: white;
+
+}
+
+.head-para{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+}
+
+.head-para h1{
+    font-size: 55px;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.footer ul{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.footer ul li p{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query between 350px and 550px */
+
+
+@media((min-width:350px) and (max-width:550px)){
+
+    .main-container{
+        width: 100%;
+        /* height: 100%; */
+        height: auto;
+    }
+    
+    .navbar{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    
+    .navbar ul{
+       display: none;
+    }
+    
+    section{
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    button{
+        width: 70%;
+        height: 30px;
+    }
+    
+    .find-home{
+        width: 100%;
+        height: auto;
+    }
+    
+    .find-home ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .find-home ul button{
+        width: 80px;
+        height: 30px;
+        padding-right: 20px;
+    }
+    
+    .find-home ul li p{
+        padding-left: 15px;
+        font-size: 15px;
+    }
+    
+    #search{
+        width: 150px;
+        height: 30px;
+    }
+    
+    .head-para{
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+        /* border: 2px solid yellow; */
+    }
+    
+    .head-para h1{
+        font-size: 30px;
+    }
+
+    .head-para p{
+        font-size: 10px;
+        padding-top: 20px;
+    }
+    
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer ul{
+        width: 100%;
+        height: auto;
+    }
+
+    .footer ul li h1{
+        font-size: 25px;
+    }
+    
+    .footer ul li p{
+        /* padding-top: 10px; */
+        font-size: 12px;
+    }
+
+}
+
+
+/* media query between 551px and 768px */
+
+
+@media((min-width:551px) and (max-width:768px)){
+
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .navbar{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    
+    .navbar ul{
+        width: 70%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    
+    section{
+        width: 25%;
+        height: auto;
+    }
+    
+    button{
+        width: 50%;
+        height: 30px;
+    }
+    
+    .find-home{
+        width: 100%;
+        height: auto;
+    }
+    
+    .find-home ul{
+        width: 100%;
+        height: auto;
+    }
+    
+    .find-home ul button{
+        width: 80px;
+        height: 20px;
+        padding-right: 30px;
+    }
+    
+    .find-home ul li p{
+        padding-left: 25px;
+        font-size: 12px;
+    }
+    
+    #search{
+        width: 130px;
+        height: 30px;
+    }
+    
+    .head-para{
+        width: 100%;
+        height: auto;
+        margin-top: 35px;
+        /* border: 2px solid yellow; */
+    }
+    
+    .head-para h1{
+        font-size: 40px;
+    }
+
+    .head-para p{
+        font-size: 13px;
+        padding-top: 20px;
+    }
+    
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer ul{
+        width: 100%;
+        height: auto;
+    }
+
+    .footer ul li h1{
+        font-size: 25px;
+    }
+    
+    .footer ul li p{
+        /* padding-top: 10px; */
+        font-size: 12px;
+    }
+
+}
+
+
+/* media query between 769px and 1000px */
+
+
+@media((min-width:769px) and (max-width:1000px)){
+
+    .main-container{
+        width: 100vw;
+        height: 100%;
+    }
+    
+    .navbar{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    
+    .navbar ul{
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    
+    section{
+        width: 25%;
+        height: auto;
+    }
+    
+    button{
+        width: 50%;
+        height: 30px;
+    }
+    
+    .find-home{
+        width: 100%;
+        height: auto;
+    }
+    
+    .find-home ul{
+        width: 100%;
+        height: auto;
+    }
+    
+    .find-home ul button{
+        width: 100px;
+        height: 30px;
+        padding-right: 30px;
+    }
+    
+    .find-home ul li p{
+        padding-left: 25px;
+        font-size: 15px;
+    }
+    
+    #search{
+        width: 150px;
+        height: 40px;
+    }
+    
+    .head-para{
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        /* border: 2px solid yellow; */
+    }
+    
+    .head-para h1{
+        font-size: 50px;
+    }
+
+    .head-para p{
+        font-size: 17px;
+        padding-top: 20px;
+    }
+    
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer ul{
+        width: 100%;
+        height: auto;
+    }
+
+    .footer ul li h1{
+        font-size: 25px;
+    }
+    
+    .footer ul li p{
+        /* padding-top: 10px; */
+        font-size: 12px;
+    }
+
+}
+
+
+/* media query at minimum 1000px */
+
+
+@media(min-width:1000px){
+
+    .main-container{
+        width: 100vw;
+        height: 100%;
+    }
+    
+    .navbar{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    
+    .navbar ul{
+        width:60%;
+        height: auto;
+    }
+    
+    section{
+        width: 25%;
+        height: auto;
+    }
+    
+    button{
+        width: 50%;
+        height: 30px;
+    }
+    
+    .find-home{
+        width: 100%;
+        height: auto;
+    }
+
+    .find-home h2{
+        font-size: 30px;
+    }
+    
+    .find-home ul{
+        width: 100%;
+        height: auto;
+    }
+    
+    .find-home ul button{
+        width: 140px;
+        height: 40px;
+        padding-right: 30px;
+    }
+    
+    .find-home ul li p{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+    
+    #search{
+        width: 200px;
+        height: 40px;
+    }
+    
+    .head-para{
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        /* border: 2px solid yellow; */
+    }
+    
+    .head-para h1{
+        font-size: 50px;
+    }
+
+    .head-para p{
+        font-size: 17px;
+        padding-top: 20px;
+    }
+    
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer ul{
+        width: 100%;
+        height: auto;
+    }
+
+    .footer ul li h1{
+        font-size: 35px;
+    }
+    
+    .footer ul li p{
+        /* padding-top: 10px; */
+        font-size: 16px;
+    }
+
+}
